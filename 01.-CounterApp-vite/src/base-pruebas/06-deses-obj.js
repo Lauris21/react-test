@@ -12,7 +12,7 @@
 // console.log( edad );
 // console.log( clave );
 
-const usContext = ({ clave, nombre, edad, rango = "Capitán" }) => {
+export const usContext = (clave, edad) => {
   // console.log( nombre, edad, rango );
 
   return {
