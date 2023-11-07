@@ -6,7 +6,9 @@ exports[`Pruebas en <FirstComponent /> debe hacer match con el snapshot 1`] = `
     <h1>
       FirstComponent
     </h1>
-    <h2>
+    <h2
+      data-testid="test-title"
+    >
       Hola, soy tu padre
     </h2>
     <p />

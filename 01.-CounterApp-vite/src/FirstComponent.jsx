@@ -5,7 +5,7 @@ const FirstComponent = ({ title, subtitle, name }) => {
   return (
     <div>
       <h1>FirstComponent</h1>
-      <h2>{title}</h2>
+      <h2 data-testid="test-title">{title}</h2>
       <p>{subtitle}</p>
       <p>{name}</p>
     </div>
