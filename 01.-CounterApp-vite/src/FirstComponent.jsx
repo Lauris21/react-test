@@ -1,9 +1,21 @@
+import PropTypes from "prop-types";
+import React from "react";
 
-
-const FirstComponent = () => {
+const FirstComponent = ({ title, subtitle, name }) => {
   return (
-    <div>FirstComponent</div>
-  )
-}
+    <div>
+      <h1>FirstComponent</h1>
+      <h2>{title}</h2>
+      <p>{subtitle}</p>
+      <p>{name}</p>
+    </div>
+  );
+};
 
-export default FirstComponent
+FirstComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  name: PropTypes.string,
+};
+
+export default FirstComponent;
