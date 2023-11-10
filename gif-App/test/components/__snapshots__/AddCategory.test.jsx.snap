@@ -2,7 +2,9 @@
 
 exports[`Pruebas en <AddCategory /> Debe hacer match con el snapshot 1`] = `
 <div>
-  <form>
+  <form
+    aria-label="form"
+  >
     <input
       placeholder="search gif"
       type="text"
