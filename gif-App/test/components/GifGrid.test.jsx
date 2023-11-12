@@ -10,6 +10,7 @@ describe("Pruebas en <GifGrid />", () => {
     images: [],
     isLoading: true,
   });
+
   test("Debe mostrar el loading al iniciarse", () => {
     render(<GifGrid category={category} />);
 
