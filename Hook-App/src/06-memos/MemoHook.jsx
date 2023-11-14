@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useCounter } from "../hooks/useCounter";
-import { Small } from "./Small";
 
 const heavyStuff = (iterationNumber = 100) => {
   for (let i = 0; i < iterationNumber; i++) {
