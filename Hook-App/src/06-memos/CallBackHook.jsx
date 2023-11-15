@@ -7,6 +7,7 @@ export const CallBackHook = () => {
   const increment = useCallback((value) => {
     setCounter((c) => c + value);
   }, []);
+
   useEffect(() => {}, [increment]);
 
   // const increment = (value) => {
