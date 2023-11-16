@@ -1,18 +1,20 @@
-import { useEffect } from "react";
 import { AddTodo, TodoList } from "./components";
-import { useTodos } from "../hooks/useTodos";
+import { useTodos } from "../hooks/";
 
 export const TodoApp = () => {
-  const { todos, handleNewTodo, handleDeleteTodo, onToggleTodo } = useTodos();
-
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
+  const {
+    todos,
+    handleNewTodo,
+    handleDeleteTodo,
+    onToggleTodo,
+    todosCount,
+    pendingTodosCount,
+  } = useTodos();
 
   return (
     <>
       <h1>
-        TODO APP : 5, <small>Pendientes: 3</small>
+        TODO APP : {todosCount} ,<small> Pendientes: {pendingTodosCount}</small>
       </h1>
       <div className="row">
         <div className="col-7">
