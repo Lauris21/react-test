@@ -23,6 +23,7 @@ module.exports = {
     expect: "readonly",
     jest: "readonly",
     test: "readonly",
+    beforeEach: "readonly",
     module: "readonly",
   },
 };

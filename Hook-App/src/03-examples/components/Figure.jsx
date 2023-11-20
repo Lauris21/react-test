@@ -9,7 +9,6 @@ export const Figure = ({ name, sprites, types }) => {
   });
 
   useLayoutEffect(() => {
-    console.log(h3Ref.current.getBoundingClientRect());
     const { width, height } = h3Ref.current.getBoundingClientRect();
 
     setboxSize({
@@ -22,7 +21,7 @@ export const Figure = ({ name, sprites, types }) => {
     <>
       <figure className="figure text-center" style={{ display: "flex" }}>
         <h3 ref={h3Ref}>{name}</h3>
-        <img src={sprites.front_shiny} />
+        <img src={sprites.front_shiny} alt={name} />
         <div className="container text-center">
           <div className="row align-items-center">
             <p className="col">{types[0].type.name}</p>
