@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const TodoItem = ({ item, handleDeleteTodo, onToggleTodo }) => {
   return (
     <li className="list-group-item d-flex justify-content-between">
@@ -5,6 +7,7 @@ export const TodoItem = ({ item, handleDeleteTodo, onToggleTodo }) => {
         className={`align-self-center ${
           item.done ? "text-decoration-line-through" : ""
         }`}
+        aria-label="span"
         onDoubleClick={() => onToggleTodo(item.id)}
       >
         {item.description}
@@ -18,3 +21,7 @@ export const TodoItem = ({ item, handleDeleteTodo, onToggleTodo }) => {
     </li>
   );
 };
+
+// TodoItem.proptype = {
+//   item: PropTypes.
+// }
